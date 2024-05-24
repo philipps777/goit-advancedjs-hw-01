@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/philipps777/goit-advancedjs-hw-01/",
+    "build": "vite build --base=/github.com/philipps777/goit-advancedjs-hw-01/",
     "preview": "vite preview"
   },
   "devDependencies": {
