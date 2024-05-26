@@ -17,8 +17,8 @@ function handleInput(event) {
 }
 function handleSubmit(event) {
   event.preventDefault();
-  event.currentTarget.reset();
   localStorage.removeItem(selectors.LS);
+  event.currentTarget.reset();
   console.log(formData);
   formData = {};
 }
@@ -28,7 +28,7 @@ function loadFormData() {
     if (!saveData) return;
     formData = JSON.parse(saveData);
     Object.entries(formData).forEach(([key, value]) => {
-      form.elements[key].value = value;
+      selectors.form.elements[key].value = value;
     });
   } catch ({ message }) {
     console.log(message);
