@@ -8,11 +8,12 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
 .feedback-form {
   display: flex;
   flex-direction: column;
   max-width: 480px;
-  padding: 12px;
+  padding: 16px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -22,19 +23,32 @@ body {
 .feedback-form label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+}
+
+.feedback-form label:last-child {
+  margin-bottom: 0;
 }
 
 .feedback-form button {
-  padding: 8px 12px;
-  font: inherit;
+  padding: 10px 16px;
+  background-color: #ff9604;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: rgb(0, 249, 211);
 }
 
 input,
 textarea {
   padding: 8px;
   font: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 textarea {
